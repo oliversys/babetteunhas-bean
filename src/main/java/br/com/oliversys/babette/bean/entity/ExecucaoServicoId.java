@@ -40,5 +40,37 @@ public class ExecucaoServicoId implements Serializable{
 		return "ExecucaoServicoId [agendamentoId=" + agendamentoId
 				+ ", profissionalId=" + profissionalId + "]";
 	}
-	
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result
+				+ ((agendamentoId == null) ? 0 : agendamentoId.hashCode());
+		result = prime * result
+				+ ((profissionalId == null) ? 0 : profissionalId.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ExecucaoServicoId other = (ExecucaoServicoId) obj;
+		if (agendamentoId == null) {
+			if (other.agendamentoId != null)
+				return false;
+		} else if (!agendamentoId.equals(other.agendamentoId))
+			return false;
+		if (profissionalId == null) {
+			if (other.profissionalId != null)
+				return false;
+		} else if (!profissionalId.equals(other.profissionalId))
+			return false;
+		return true;
+	}
 }

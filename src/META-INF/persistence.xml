@@ -16,7 +16,10 @@
 		<class>bean.Profissional</class>		
 		<class>bean.Servico</class>
 		<class>bean.Usuario</class>
+		<class>bean.ProfissionalServico</class>
+        <class>bean.ProfissionalEstabelecimento</class>
         
+        <class>br.com.oliversys.babette.bean.entity.Pergunta</class>
         <class>br.com.oliversys.babette.bean.entity.Agendamento</class>
         <class>br.com.oliversys.babette.bean.entity.ExecucaoServico</class>
         
